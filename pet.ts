@@ -1,7 +1,6 @@
-class Monstro extends Personagem{
+class Pet extends Personagem{
 
-
-    fraqueza: string
+    public raca: string
 
     constructor(
         nome: string,
@@ -11,13 +10,14 @@ class Monstro extends Personagem{
         defesa: number,
         agilidade: number,
         magia: number,
-        fraqueza: string
+        raca: string
     ){
         super(nome, vida, forca, ataque, defesa, agilidade, magia)
 
-        this.fraqueza = fraqueza
+        this.raca = raca
     }
+
     olhar(){
-        console.log("Olhar Assustador!!!")
+        console.log("Olhar alegre")
     }
 }
